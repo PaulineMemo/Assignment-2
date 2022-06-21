@@ -82,4 +82,3 @@ st.write((accuracy_score(y_test, predicted_labels)))
 
 st.sidebar.title("Customer Banking Churn App")
 
-st.sidebar.selectbox('Geography','Gender','NumOfProducts','HasCrCard','Age','EstimatedSalary')
