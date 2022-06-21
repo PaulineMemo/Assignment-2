@@ -55,18 +55,6 @@ st.write(data.head())
 x= data.drop(columns='Exited',axis=1)
 y=data['Exited']
 
-#standardisation
-scaler=StandardScaler()
-scaler.fit(data)
-StandardScaler()
-
-standardized_data=scaler.transform(data)
-
-print(standardized_data)
-
-x=standardized_data
-y= data['Exited']
-
 #splitting the data
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=21)
